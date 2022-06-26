@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="refactor_nanam:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/refactor_nanam_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="refactor_nanam/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="refactor_nanam" />
+          <element id="jpa-descriptors" facet="refactor_nanam/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="JAX-WS-Apache Axis" />
+          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
+          <element id="library" level="project" name="tomcat:servlet:4.1.36" />
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+
+/*서브 책 소개 */
+div.booksWrap{
+
+    width: 100%;
+    height:2900px;
+    margin-top: 30px;
+    
+
+
+
+}
+
+div.booksWrap > div.booksBox{
+
+    width: 1180px;
+    height: 3500px;
+    margin: 0 auto;
+}
+
+
+div.booksWrap  > div.booksBox >div.basebar>{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+   
+    
+}
+div.booksWrap  > div.booksBox >div.basebar>ul{
+  overflow: hidden;
+}
+div.booksWrap  > div.booksBox >div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}
+
+
+div.booksWrap  > div.booksBox > div#booksInfo{
+
+    width: 1180px;
+    height: 600px;
+
+}
+
+
+/*책정보*/
+
+div#tableWrap{
+    width: 885px;
+    height: 500px;
+    float: right;
+    box-sizing: border-box;
+    padding-left: 40px;
+    
+
+}
+
+div#tableWrap > img{
+   float: left;
+    
+
+}
+
+
+table#infoBookTable{
+    width: 100%;
+    
+    height: 100%;
+   
+}
+
+table#infoBookTable h2{
+    text-align: left;
+   
+}
+
+
+table#infoBookTable td.price{
+
+    color: #00c5aa;
+}
+
+table#infoBookTable td{
+    font-size: 13px;
+    text-align: left;
+}
+table#infoBookTable td.autor{
+font-size: 16px;
+}
+
+table#infoBookTable td.color{
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    padding: 15px 15px 12px 20px;
+    background-color: #f9f9f9;
+}
+
+table#infoBookTable td:nth-child(1) {
+    width: 20%;
+
+}
+ul#btnWrap li{
+	float:left;
+	width:255px;
+	height:50px;
+	margin-right:20px;
+	box-sizing :border-box;
+    padding: 10px 79px;
+
+	
+}
+
+ul#btnWrap li:nth-child(1){
+	
+	background-color:#00c5aa;
+	
+}
+
+
+ul#btnWrap li:nth-child(2){
+	
+	background-color:#ddd;
+	
+}
+
+ul#btnWrap li:nth-child(3){
+	
+	background-color:ivory;
+	
+}
+
+
+
+/*책내용*/
+
+div.bookDetailWrap{
+    width: 1180px;
+    height: 1500px;
+    /*background-color: red;*/
+}
+
+div.detailBox > ul {
+    overflow: hidden;
+}
+div.detailBox > ul >li {
+    float: left;
+}
+
+ div.detailBox > ul >li.informationBook {
+    
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-left: 1px solid #00c5aa;
+    border-top: 1px solid #00c5aa;
+    border-right: 1px solid #00c5aa;
+}
+ div.detailBox > ul >li.borderColor {
+
+    border-bottom: 1px solid #00c5aa;
+}
+
+div.detailBox:nth-child(2){
+
+    margin-top: 100px;
+}
+
+div.detailBox:nth-child(3){
+
+    margin-top: 100px;
+}
+
+div.detailBox:nth-child(3) p{
+
+    margin-top: 30px;
+}
+

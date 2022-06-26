@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/main.css}" rel="stylesheet" type="text/css">
+    <title>홈페이지</title>
+    <title>Insert title here</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(function() {//startWithReady
+        function makeAjax(url,dataType, data, type, contentType) {
+            function sendData() {
+                $.ajax({
+                    async:false,
+                    url:url,
+                    dataType:dataType,
+                    data:data,
+                    type: type,
+                    contentType: contentType ,
+                    success: function(data){
+
+                        let resultData = data
+                        result(resultData);
+                    }
+                })
+            }
+            return sendData;
+        }
+
+        function result(data) {
+
+            return location.href = '/api/main';
+        }
+
+
+
+        $("#writeBtn").click(function(e){
+            e.preventDefault();
+            var name = $("input[name='name']");
+            var title = $("input[name='title']");
+            var content = $("textarea[name='content']");
+            var codeType =$("select[name='codeType']");
+
+            alert(content)
+
+            if(name.val() != $.trim(name.val())){
+                alert("이름의 앞뒤 공백을 제거해주세요");
+                name.focus();
+                return false;
+            }else if(name.val().trim().length<1){
+
+                alert("이름 값을 입력해주세요");
+                name.focus();
+                return false;
+            }else if ( title.val() !=$.trim(title.val()) ) {
+                alert("제목의 앞뒤 공백을 제거해주세요");
+                title.focus();
+                return false;
+            }else if(title.val().trim().length<1){
+                title.focus();
+                alert("제목을 입력해주세요")
+                return false;
+            }else if(content.val().trim().length<1){
+                alert("콘텐츠 값을 입력해주세요");
+                content.focus();
+                return false;
+            }else{
+                let data={
+                    "title":title.val(),
+                    "content":content.val(),
+                    "name":name.val(),
+                    "codeType":codeType.val()
+                };
+
+                let url = "/api/insertPro";
+                let dataType = "json";
+                let type = "GET";
+                let contentType="application/json; charset=UTF-8";
+                let myFunc = makeAjax(url,dataType, data, type, contentType);
+
+                myFunc();
+
+            }//endOfprevent
+
+        });//endOfinput
+
+    });//endOfready
+</script>
+<body>
+<form  id="testForm">
+    <table border="1">
+        <tbody>
+        <tr>
+            <td style="width: 150px;" align="center">타입 :</td>
+            <td style="width: 400px;">
+                <select name="codeType">
+                    <option  value="01" >자유</option>
+                    <option  value="02" >익명</option>
+                    <option  value="03" >QNA</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 150px;"align="center">이름 :</td>
+            <td style="width: 400px;"><input type="text" name="name"/></td>
+        </tr>
+        <tr>
+            <td style="width: 150px;"align="center">제목 :</td>
+            <td style="width: 400px;"><input type="text" name="title"/></td>
+        </tr>
+        <tr>
+            <td style="width: 150px;"align="center">내용 :</td>
+            <td style="width: 400px;"><textarea name="content" rows="25" cols="65" ></textarea></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>
+            <td align="right">
+                <input type="button" id="writeBtn" value="글쓰기">
+                <input type="button" value="다시쓰기" onclick="reset()">
+                <input type="button" value="취소" onclick="history.go(-1)">
+                &nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</form>
+</body>
+</html>

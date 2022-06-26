@@ -1,0 +1,269 @@
+ @charset "utf-8";
+
+
+/*로그인 폼 영역*/
+
+div#allWrap{
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    
+}
+/*선택창*/
+
+div#allWrap >div#goFindWrap{
+    width: 438px;
+    height: 100px;
+    margin: 0 auto;
+   
+    
+}
+
+div#allWrap >div#goFindWrap>ul{
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+div#allWrap >div#goFindWrap>ul >li{
+    float: left;
+    width: 130px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+    background-color: wheat;
+    
+    
+}
+
+
+
+div#allWrap >div#goFindWrap>ul >li:nth-child(2){
+
+    margin-left: 24px;
+    margin-right: 24px;
+
+}
+
+
+
+
+div#allWrap >div#goFindWrap>ul >li >a{
+   
+    padding: 17px 13px 17px 13px;
+
+ 
+}
+
+
+/*로그인창 인풋창*/
+
+div#allWrap {
+
+    width: 1180px;
+    height: 909px;
+    box-sizing: border-box;
+    padding: 10px;
+  
+
+}
+
+
+
+/*베이스바*/
+div#allWrap >div.basebar>{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+   
+    
+}
+div#allWrap >div.basebar>ul{
+  overflow: hidden;
+}
+div#allWrap >div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}
+
+
+
+
+
+div#allWrap >div#allFindLoginWrap{
+
+    width: 438px;
+    height: 800px;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
+
+}
+
+/*간격띄우기*/
+form#allFindLoginForm> ul >li:nth-child(2){
+    margin: 30px auto;
+}
+
+
+
+/*로그인 아이디 패스워드 입력창 처리하기*/
+input.loginPutPosition{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: block;
+    padding: 15px 10px 14px 10px;
+    
+}
+
+/*로그인 버튼 처리하기*/
+
+input#loginBtn{
+
+    width: 100%;
+    height: 60px;
+    border: unset;
+    margin: 20px auto;
+}
+form#allFindLoginForm > ul >li>h3{
+    text-align: center;
+}
+
+/*자동로그인 처리하기*/
+
+input#autoLogin{
+    display: none;
+    
+
+}
+
+input#autoLogin +label{
+    padding-left: 20px;
+    background-image: url(../images/check01_off.png);
+    background-repeat: no-repeat;
+}
+
+input#autoLogin:checked +label{
+    padding-left: 20px;
+    background-image: url(../images/check01_on.png);
+    background-repeat: no-repeat;
+}
+
+/*--------------------------아이디찾기-----------------------------------*/
+
+
+div#allFindLoginWrap{
+
+    width: 446px;
+    height: 1300px;
+    margin: 0 auto;
+
+}
+
+
+/*제목 영역*/
+h2#caption{
+    box-sizing: border-box;
+    padding: 20px 0px 30px 52px;
+}
+
+
+
+
+
+
+/*라디오 박스 처리하기*/
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    font-size: 14px;
+}
+
+input[type="radio"] + label{
+    padding-left: 28px;
+    
+    background-image: url(../images/check01_off.png);
+    background-repeat: no-repeat;
+    
+    
+}
+
+input[type="radio"]:checked + label{
+    padding-left: 28px;
+    background-image: url(../images/check01_on.png);
+    background-repeat: no-repeat;
+    
+}
+
+
+/*입력창 처리*/
+
+form#allFindLoginForm{
+    position: relative;
+    margin: 0 auto;
+}
+
+
+form#allFindLoginForm input.putPositionFind{
+    width: 355px;
+    height: 50px;
+    margin-top:20px;
+    box-sizing: border-box;
+    padding: 2px 127px 2px 9px;
+    border: 1px solid black;
+    display: block;
+    
+    
+
+}
+
+
+
+
+
+form#allFindLoginForm input[type="radio"]:first-of-type:checked + label ~ input[type="email"]{
+  display: none;
+    
+}
+
+form#allFindLoginForm input[type="radio"]:nth-of-type(2):checked + label ~ input[type="tel"]{
+    display: none;
+      
+}
+
+form#allFindLoginForm{
+  position: relative;
+}
+
+/*버튼처리*/
+form#allFindLoginForm input#overlapBtn{
+    width: 97px;
+    height: 30px;
+    position: absolute;
+    right: 43px;
+    top: 136px;
+    border: unset;
+}
+
+form#allFindLoginForm input#searchBtn{
+    width: 355px;
+    height: 50px;
+    margin-top: 30px;
+    border: unset;
+
+}
+
+/*------------------비밀번호 찾기-------------*/
+
+
+
+
+
+
+

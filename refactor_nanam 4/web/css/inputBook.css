@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*테이블 전체*/
+div#bookAllWrap {
+	width: 78%;
+	height: 1155px;
+	margin: 0 auto;
+}
+
+
+/*베이스바*/
+
+div.basebar>{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+   
+    
+}
+ div.basebar ul{
+  overflow: hidden;
+}
+ div.basebar >ul >li{
+    float: left;
+    margin-right: 8px;
+}
+
+
+
+ div.caption {
+    width:80%;
+}
+
+div.caption input{
+	width:40%;
+	height:30px;
+	margin-bottom:15px;
+	margin-top:15px;'
+	
+	
+}
+
+div.caption textarea{
+	width:100%;
+	height:500px;
+	
+	
+}
+
+
+
+
+button.inputBtn{
+  width: 175px;
+  height: 100%;
+  margin-right: 25px;
+  float: left;
+
+
+}

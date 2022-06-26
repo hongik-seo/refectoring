@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*전체*/
+
+ /*회원기입*/
+ div#agreeJoinWrap{
+
+
+    width: 100%;
+    height: 1500px;
+    /*background-color: red;*/
+
+}
+
+div#agreeJoinWrap> div#agreeJoinBox{
+
+    width: 1180px;
+    height: 1500px;
+    /*background-color: black;*/
+    margin: 0 auto;
+
+}
+
+
+/*베이스바
+div#agreeJoinWrap> div#agreeJoinBox>div.basebar{
+
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+
+
+}
+
+div#agreeJoinWrap> div#agreeJoinBox>div.basebar>ul{
+    overflow: hidden;
+}
+
+div#agreeJoinWrap> div#agreeJoinBox>div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}*/
+
+/*약관동의/회원가입*/
+
+/*선택창*/
+
+div#goAgreeJoinWrap{
+    width: 438px;
+    height: 100px;
+    margin: 0 auto;
+    /*background-color: rebeccapurple;*/
+    
+}
+
+div#goAgreeJoinWrap>ul{
+    overflow: hidden;
+    
+}
+
+div#goAgreeJoinWrap>ul >li{
+    
+    width: 115px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    /*background-color: wheat;*/
+  
+    
+}
+
+div#goAgreeJoinWrap>ul >li:nth-child(1){
+    float: left;
+    background-color: gainsboro;
+}
+
+div#goAgreeJoinWrap>ul >li:nth-child(2){
+    float: right;
+    background-color:#21cab4;
+    
+}
+
+div#goAgreeJoinWrap>ul >li >a{
+    padding: 17px 22px 17px 21px;
+ 
+}
+
+/*회원가입 영역*/
+div#myFormWrap{
+
+    width: 450px;
+    height: 700px;
+    margin: 20px auto;
+}
+
+
+div#myFormWrap >h2{
+
+    margin: 20px;
+}
+
+#myForm{
+    width: 100%;
+    
+}
+
+#myForm ul#allWrap{
+    width: 410px;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+ul#allWrap li.inputInterval {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#myForm input.inputSize{
+    width: 100%;
+    height: 50px;
+    border : 1px solid #00c5aa;;
+    box-sizing: border-box;
+    padding: 2px 9px 0px 9px;
+    display: block;
+    margin-top: 10px;
+    color: wheat;
+    font-size: 13px;
+    line-height:50px;
+    background-color: #00c5aa;
+    
+}
+
+#myForm li#emailWrap{
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+#myForm label{
+    display: inline-block;
+    color:black;
+    font-weight: 700;
+    font-size: 13px;
+    line-height :1.6;
+}
+
+#myForm p{
+    width: 100%;
+    height: 10px;
+    font-size: 12px;
+    color: red;
+    padding: 9px;
+
+}
+
+input.notMust{
+	width: 100%;
+    height: 50px;
+    border : 1px solid #00c5aa;;
+    box-sizing: border-box;
+    padding: 2px 9px 0px 9px;
+    display: block;
+    margin-top: 10px;
+    
+    color: wheat;
+    font-size: 13px;
+    line-height:50px;
+    background-color: white;
+	
+}
+
+
+input[type='button']{
+
+    padding: 21px 0 17px;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    border: unset;
+}

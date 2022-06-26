@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+
+
+/*스테디셀러 책 페이지 */
+div.booksWrap{
+
+    width: 100%;
+    height: 1570px;
+    margin-top: 30px;
+    
+
+
+
+}
+
+div.booksWrap > div.booksBox{
+  
+
+    width: 1180px;
+    height: 1570px;
+    margin: 0 auto;
+}
+div.booksWrap  > div.booksBox >div.basebar>{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+   
+    
+}
+div.booksWrap  > div.booksBox >div.basebar>ul{
+  overflow: hidden;
+}
+div.booksWrap  > div.booksBox >div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}
+
+div.booksWrap > div.booksBox > div.booksArea{
+    width: 1180px;
+    height: 1000px;
+   
+
+
+}
+
+div.booksWrap > div.booksBox > div.booksArea >div.list{
+  display: block;
+  
+
+
+}
+
+/*진짜 콘텐츠 영역*/
+table{
+  display: block;
+  
+     
+}
+
+
+
+table>tbody>tr>td{
+    width: 646px;
+    height: 271px;
+    
+   
+}
+
+table>tbody>tr>td > a{
+    overflow: hidden;
+    
+   
+}
+
+table>tbody>tr>td > a> img{
+    width: 143px;
+    height: 191px;
+    float: left;
+    
+   
+}
+
+table>tbody>tr>td > a> div#modify{
+    float: left;
+    width: 360px;
+    height: 230px;
+    padding: 0 0 0 28px;
+
+    
+}
+
+
+
+table>tbody>tr>td > a> div#modify > p.title{
+    font-size: 17px;
+    color: #444;
+    font-weight: 100;
+    padding: 8px 0 5px 0;
+    text-align: left;
+    letter-spacing: -0.7pt;
+    
+    
+   
+}
+
+table>tbody>tr>td > a> div#modify > p.athor{
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    color: #666;
+    letter-spacing: -0.5pt;
+
+}
+
+
+table>tbody>tr>td > a> div#modify > p.price{
+    font-size: 14px;
+    color: #00bea4;
+    margin-bottom: 10px;
+
+}
+
+
+table>tbody>tr>td > a> div#modify > p.publishYear{
+    font-size: 13px;
+    color: #666;
+    padding-bottom: 8px;
+
+}
+table>tbody>tr>td > a> div#modify > p.bookText{
+ 
+    padding-top: 8px;
+    text-align: justify;
+    font-size: 13px;
+    color: #777;  
+    white-space: normal; 
+    line-height: 1.2; 
+    height: 3.6em; 
+    text-align: left;
+    word-wrap: break-word; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+
+
+}
+
+/*페이저 히스토리*/
+div#pagerWrap{
+    width: 160px;
+    height: 60px;
+    overflow: hidden;
+    margin: 50px auto;
+    /*background-color: blue;*/
+    position: relative;
+}
+
+div#pagerWrap > ul{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+div#pagerWrap > ul >li{
+    float: left;
+}
+
+div#pagerWrap > ul >li::after{
+    content: "/";
+}
+
+
+
+div#pagerWrap > ul >li a{
+    font-size: 20px;
+    line-height: 60px;
+}
+
+/*페이저 히스토리 버튼 처리*/
+
+div#pagerWrap > img{
+    width: 18px;
+    height: 18px;
+}
+
+div#pagerWrap> img#prevBtn{
+   position: absolute;
+   left: 0; bottom: 35%;
+    
+}
+
+div#pagerWrap> img#nextBtn{
+    position: absolute;
+    right: 0; bottom: 35%;
+}
+
+

@@ -1,0 +1,117 @@
+ @charset "utf-8";
+
+
+/*로그인 폼 영역*/
+#allWrap {
+    width: 1180px;
+	height: initial;
+    box-sizing: border-box;
+    padding: 10px;
+    margin : 0 auto;
+
+}
+
+
+
+#goFindWrap{
+    width: 512px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+div#goFindWrap>ul{
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#goFindWrap>ul >li{
+    float: left;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: wheat;
+}
+
+#goFindWrap>ul >li:nth-child(2){
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#goFindWrap>ul >li >a{
+    padding: 17px 13px 17px 13px;
+}
+
+/*베이스바*/
+
+ .basebar{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+ }
+
+ .basebar>ul{
+  overflow: hidden;
+ }
+
+
+ .basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+ }
+
+
+ #allFindLoginWrap{
+
+    width: 446px;
+    height: 800px;
+    margin: 0 auto;
+
+ }
+
+ #allFindLogin{
+
+     width: 100%;
+     height: 100%;
+     margin: 0 auto;
+
+ }
+
+/*제목 영역*/
+h2#caption{
+    box-sizing: border-box;
+    padding: 20px 0px 30px 52px;
+}
+
+
+
+/*입력창 처리*/
+
+#allFindLogin input.putPositionFind{
+    width: 355px;
+    height: 50px;
+    margin-top:20px;
+    box-sizing: border-box;
+    padding: 2px 127px 2px 9px;
+    border: 1px solid black;
+    display: block;
+
+
+
+}
+
+/*버튼처리*/
+#allFindLogin input#overlapBtn{
+    width: 355px;
+    height: 50px;
+    margin-top: 30px;
+    border: unset;
+}
+
+#allFindLogin input#searchBtn{
+    width: 355px;
+    height: 50px;
+    margin-top: 30px;
+    border: unset;
+}

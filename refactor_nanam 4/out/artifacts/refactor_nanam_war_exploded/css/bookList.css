@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+
+
+/*나남의 책 페이지 */
+div.booksWrap{
+
+    width: 100%;
+  
+    margin-top: 30px;
+    
+
+
+
+}
+
+div.booksWrap > div.booksBox{
+
+    width: 1180px;
+    
+    margin: 0 auto;
+}
+div.booksWrap  > div.booksBox >div.basebar>{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+   
+    
+}
+div.booksWrap  > div.booksBox >div.basebar>ul{
+  overflow: hidden;
+}
+div.booksWrap  > div.booksBox >div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}
+
+div.booksWrap > div.booksBox > div.booksArea{
+    width: 1180px;
+  
+   
+
+
+}
+
+div.booksWrap > div.booksBox > div.booksArea >div.list{
+  display: block;
+  
+
+
+}
+
+/*진짜 콘텐츠 영역*/
+table{
+  display: block;
+  
+     
+}
+
+
+
+table>tbody>tr>td{
+    width: 646px;
+    height: 271px;
+    
+   
+}
+
+table>tbody>tr>td > a{
+    overflow: hidden;
+    
+   
+}
+
+div.list img{
+    width: 143px;
+    height: 191px;
+    float: left;
+    
+   
+}
+
+table>tbody>tr>td > a> div#modify{
+    float: left;
+    width: 360px;
+    height: 230px;
+    padding: 0 0 0 28px;
+
+    
+}
+
+
+p{
+	
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 100px;
+    overflow: hidden;
+}
+	
+	
+	
+
+

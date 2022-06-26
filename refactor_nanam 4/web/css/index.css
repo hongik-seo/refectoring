@@ -1,0 +1,238 @@
+@charset "utf-8";
+/*메인 페이지*/
+
+/*전체*/
+
+/*프로모션*/
+
+.container_skitter  {
+    
+    width:1180px ;
+    height:357px;
+}
+
+.box_skitter {
+    width:1180px;
+    height:357px;
+}
+
+.box_skitter img {
+    width: 1180px;
+    height:357px;
+}
+
+
+/*콘텐츠*/
+
+div#contentsWrap {
+    width:100%;
+    margin-top: 20px;
+    /*background-color: rebeccapurple;*/
+  
+    
+}
+
+
+div#contentsWrap > ul#contentsBox {
+    width:1180px;
+   /* background-color: red;*/
+    margin: 0 auto;
+    overflow: hidden;
+    
+    
+}
+
+
+
+div#contentsWrap > ul#contentsBox >li{
+    float: left;
+    /*background-color: wheat;*/
+    width: 30%;
+    height: 202px;
+    margin-right: 40px;
+    box-sizing: border-box;
+    padding-top: 6px;
+}
+
+div#contentsWrap > ul#contentsBox>li:last-child{
+   
+    margin-right: unset;
+   
+}
+
+
+/*지훈상 -메인 -콘텐츠*/
+div#contentsWrap > ul#contentsBox >li#jihun img{
+
+    width: 100%;
+    
+    
+}
+
+
+/*언론이 본 나남 - 메인-콘텐츠*/
+div#contentsWrap > ul#contentsBox >li#news{
+    position: relative;
+}
+
+
+div#contentsWrap > ul#contentsBox >li#news a.moreBtn{
+    position: absolute;
+    right: 0; top: 0;
+}
+
+div#contentsWrap > ul#contentsBox >li#news >a >img{
+    float: left;
+ }
+
+div#contentsWrap > ul#contentsBox >li#news >a >div#inforWrap{
+   float: left;
+   margin: 71px 0 0 37px;
+   
+
+}
+
+
+div#contentsWrap > ul#contentsBox >li#news >a >div#inforWrap >p{
+    width: 150px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+
+/*공지사항-메인-콘텐츠*/
+
+div#contentsWrap > ul#contentsBox >li#notice{
+    position: relative;
+}
+
+div#contentsWrap > ul#contentsBox >li#notice:last-child{
+  width: 33%;
+}
+
+
+div#contentsWrap > ul#contentsBox >li#notice a.moreBtn{
+    position: absolute;
+    right: 0; top: 0;
+}
+
+
+div#contentsWrap > ul#contentsBox h3{
+    margin-bottom: 25px;
+}
+
+
+
+div#contentsWrap > ul#contentsBox ul li {
+    font-size: 14px;
+    margin: 3px 0 3px 0; 
+  }
+
+
+
+/*상품*/
+    
+
+div#productionBox{
+    width: 1180px;
+    height: 600px;
+    /*background-color: honeydew;*/
+    margin: 30px auto;
+    
+}
+
+/*텝메뉴*/
+ul#tab{
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+
+ul#tab >li{
+    width: 168px;
+    height: 50px;
+    float: left;
+    border: 1px solid gray;
+    margin-left: 30px;
+
+}
+
+ul#tab >li > a{
+    font-size: 15px;
+    line-height: 50px;
+  
+    box-sizing: border-box;
+    padding: 15px 38px;
+    
+ 
+}
+
+/*상품 리스트*/
+
+div#productionList{
+    width: 1180px;
+    /*background-color:red;*/
+    position: relative;
+    margin: 75px auto;
+    
+  
+}
+
+
+div#productionList > div#innerProductionList {
+    /*background-color: khaki;*/
+    width: 1000px;
+    height: 310px;
+    overflow: hidden;
+    margin: 0 auto;
+   
+}
+ul.overFlow li{
+    float: left;
+    margin-left: 5px;
+}
+
+
+
+
+ul.overFlow img{
+    
+    width: 171px;
+    height: 241px;
+    margin: 20px 10px 0px 10px;
+    float: left;
+    
+}
+
+
+div#productionList > div#innerProductionList >ul.overFlow li a div{
+    font-size: 14px;
+    text-align: center;
+}
+
+div#productionList > div#innerProductionList >ul.overFlow li a div span{
+    font-size: 10px;
+    display: block;
+   
+}
+
+
+
+
+/*좌우 버튼 처리*/
+
+div#productionList > img#prevBtn{
+    position: absolute;
+    left: 0; bottom: 50%;
+    cursor: pointer;
+}
+
+
+div#productionList > img#nextBtn{
+    position: absolute;
+    right: 0; bottom: 50%;
+    cursor: pointer;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Insert title here</title>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<script>
+    $(function() {//startWithready
+
+        function makeAjax(url,dataType, data, type,contentType) {
+            function sendData() {
+                $.ajax({
+                    async:false,
+                    url:url,
+                    dataType:dataType,
+                    data:data,
+                    type: type,
+                    headers:{contentType},
+                    success: function(data){
+
+                        let resultData = data
+                        result(resultData);
+                    }
+                })
+            }
+            return sendData;
+        }
+
+
+        function result(data) {
+            return location.href = "/api/main";
+        }
+
+        $("#toList").click(function(){
+            return "api/main"
+        });
+
+        $("#modifyBtn").on("click",function(e){
+            e.preventDefault();
+            var title = $("input[name='title']");
+            var content = $("textarea[name='content']");
+            var num = $("input[name='num']");
+            var codeType = $("select[name='codeType']");
+            var name = $("input[name='name']");
+
+            if ( title.val()!=$.trim(title.val()) ) {
+                alert("제목의 앞뒤 공백을 제거해주세요");
+                title.focus();
+                return false;
+            }else if(title.val().trim().length<1){
+                title.focus();
+                alert("제목을 입력해주세요")
+                return false;
+            }else if(content.text().trim().length<1){
+                alert("콘텐츠 값을 입력해주세요");
+                content.focus();
+                return false;
+            }else{
+                let val = num.val();
+                let data = {
+                    "num": num.val(),
+                    "codeType" : codeType.val(),
+                    "title" : title.val(),
+                    "content": content.val(),
+                    "name": name.val()
+                };
+
+                const url="/api/update/"+val;
+                let dataType = "json";
+                let type = "put";
+                let contentType="application/json; charset=utf-8";
+                let myFunc = makeAjax(url,dataType, data, type, contentType);
+                myFunc();
+
+            }
+        });//endofModifyBtnClick
+
+
+        $("#deleteBtn").on('click',function(){
+
+            var num=$("input[name='num']").val();
+            const url="/api/delete/"+num;
+            const data={"num":num};
+            let dataType = "json";
+            let type = "GET";
+            let contentType="application/json; charset=utf-8";
+            let myFunc = makeAjax(url,dataType, data, type, contentType);
+            myFunc();
+        });
+    });//endOfready
+</script>
+<body>
+<div>
+    <h1>자유게시판</h1>
+</div>
+
+
+<div style="width:650px;" align="right">
+    <a th:href="@{'main'}" id="toList">리스트로</a>
+</div>
+<hr style="width: 600px">
+<input type="hidden" name="num" th:value='${detail.num}'  />
+<table border="1">
+    <tbody>
+    <tr>
+        <td style="width: 150px;" align="center">타입 :</td>
+        <td style="width: 400px;">
+            <select name="codeType">
+                <option class="option" value="01" >자유</option>
+
+                <option class="option" value="02" >익명</option>
+
+                <option class="option" value="03" >QnA</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 150px;"align="center">이름 :</td>
+        <td th:block style="width: 400px;"><input type="text" name="name" th:value='${detail.name}' readonly/></td>
+    </tr>
+    <tr>
+        <td style="width: 150px;"align="center">제목 :</td>
+        <td  th:block style="width: 400px;"><input type="text" name="title"  th:value='${detail.title}'/></td>
+    </tr>
+    <tr>
+        <td style="width: 150px;"align="center">내용 :</td>
+        <td th:block style="width: 400px;"><textarea name="content" rows="25" cols="65" th:value="${detail.content}" th:text="${detail.content}"></textarea></td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td></td>
+        <td align="right">
+            <input type="button" value="수정" id="modifyBtn">
+            <input type="button" value="삭제" id="deleteBtn" >
+            <input type="button" value="취소" onclick="location.href='/api/main'">
+        </td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

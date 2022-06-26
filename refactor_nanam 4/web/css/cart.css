@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+
+
+/*장바구니 전체영역 */
+div#buyBooksWrap{
+
+    width: 100%;
+
+    height: 1775px;
+
+    margin-top: 30px;
+    
+
+
+
+}
+
+div#buyBooksWrap > div#buyBooksBox{
+
+    width: 1180px;
+    height: 1742px;
+    margin: 0 auto;
+}
+
+
+
+/*장바구니 세부영역*/
+div#cartWrap{
+
+    width: 1180px;
+  
+    /*background-color: khaki;*/
+    margin: 100px auto;  
+ 
+}
+
+ul#infoBoard{
+
+float: right;
+overflow: hidden;
+
+
+
+}
+
+ul#infoBoard>li{
+    float: left;
+}
+
+
+ ul#infoBoard>li div{
+   
+    width: 171px;
+    height: 92px;
+    background-color: white;
+ 
+    border-radius: 30%;
+    text-align: center;
+  
+    line-height: 92px;
+    margin-left:20px;
+}
+
+
+div#cart{
+
+    width: 1180px;
+    height: fit-content;
+    
+}
+
+
+
+
+div#cart> table#cartTable{
+    width: 100%;
+     height: fit-content;
+}
+
+div#cart > table#cartTable tr td{
+  
+        box-sizing: border-box;
+        padding: 20px;
+    
+}
+
+div#cart > table#cartTable th{
+
+    background-color: #f9f9f9;
+    
+
+}
+
+tbody td{
+  
+    background-color: #cfaeae;
+    
+
+}
+
+div#cart > table#cartTable tfoot{
+  
+    background-color: #f9f9f9;
+    
+
+}
+
+
+img{
+    width: 50px;
+}
+
+input#number{
+    width: 25px;
+    height: 25px;
+  
+}
+
+
+img.btns{
+	
+	
+	width:10px;
+	
+}

@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+
+
+
+/*베이스 바*/
+
+div.basebar>{
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+   
+    
+}
+
+
+div.basebar>ul{
+    overflow: hidden;
+}
+
+div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}
+
+
+/*공지사항*/
+
+div#tableWrap{
+
+     width: 100%;
+     height: 1155px; 
+    margin: 0 auto;
+}
+
+
+
+
+
+ table#noticeTable{
+    width: 100%;
+    height: 50px;
+    margin: 30px auto;
+
+}
+
+
+
+table th{
+    height: 30%;
+    font-family: NotoKR-Medium,sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: 100;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f9f9f9;
+   
+
+}
+
+table th.caption{
+    width: 70%;
+}
+
+
+table td{
+    height: 30%;
+    font-family: NotoKR-Medium,sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: 100;
+    text-align: center;
+    padding: 15px 0;
+   
+   
+    border-top: 1px solid #262626;
+}
+
+
+/*페이저 히스토리*/
+div#pagerWrap{
+    width: 450px;
+    height: 60px;
+    
+    margin: 50px auto;
+  /*  background-color: blue;*/
+    position: relative;
+    margin: 0 auto;
+}
+
+div#pagerWrap > ul{
+    width: 30%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+div#pagerWrap > ul >li{
+    float: left;
+}
+
+div#pagerWrap > ul >li::after{
+    content: "/";
+}
+
+
+
+div#pagerWrap > ul >li a{
+    font-size: 20px;
+    line-height: 60px;
+}
+
+/*페이저 히스토리 버튼 처리*/
+
+div#pagerWrap > img{
+    width: 18px;
+    height: 18px;
+}
+
+div#pagerWrap> img#prevBtn{
+   position: absolute;
+   left: 0; bottom: 35%;
+    
+}
+
+div#pagerWrap> img#nextBtn{
+    position: absolute;
+    right: 0; bottom: 35%;
+}
+
+
+/*글쓰기 버튼*/
+button#noticeWriteBtn{
+    width: 100px;
+    height: 35px;
+
+}
+
+table#essayTable{
+	
+	width :100%;
+	height :600px;
+	
+}
+

@@ -1,0 +1,725 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1182px){
+/*전체*/
+ div#wrap{
+
+    width: 320px;
+    margin: 0 auto;
+ 
+
+
+}
+
+/*헤더*/
+div#headerWrap{
+
+    width: 320px;
+    height: 300px;
+ }
+
+ div#headerWrap div#headerBox{
+
+    width: 320px;
+    height: 300px;
+    
+}
+
+div#gnbWrap > ul#gnbBox{
+    
+    width: 320px;
+    height: auto;
+}
+
+
+/*로그인 회원가입/로그인*/
+div#headerWrap > div#headerBox> div#formWrap > span {
+    display: none;
+
+
+
+}
+/*검색창*/
+div#headerWrap >div#headerBox> div#formWrap > form >input#searchBooks {
+    display: none;
+
+}
+
+div#dropDownMenu{
+
+   
+    display: block;
+}
+
+
+/*토글메뉴*/
+
+img#dropDownImg{
+
+    width: 50px;
+    height: 50px;
+    float: right;
+    display: block;
+}
+
+div#dropDownMenu{
+
+    width: 120px;
+    height: initial;
+    background-color: wheat; 
+    float: right;
+    display: none;
+}
+
+div#dropDownMenu ul li#dropFirst{
+
+    width: 120px;
+    height: 35px;
+    background-color: #00c5aa;
+    font-size: 6px;
+}
+
+div#dropDownMenu ul li#dropSecond{
+
+    width: 120px;
+    height: 35px;
+    background-color: #00c5aa;
+    font-size: 6px;
+}  
+
+div#dropDownMenu ul li.dropF{
+
+ 
+    font-size: 3px;
+}
+
+div#dropDownMenu ul li.dropS{
+
+ 
+    font-size: 3px;
+}
+
+/*콘텐츠*/
+div#contentsWrap {
+    width:100%;
+    margin-top: 20px;
+   
+  
+    
+}
+
+
+div#contentsWrap > ul#contentsBox {
+    width: 320px;
+    height: initial;
+    margin: 0 auto;
+    
+    
+}
+
+
+div#contentsWrap > ul#contentsBox >li{
+     width: 100%;
+     height: initial;
+}
+
+
+/*포인트*/
+div#gnbWrap div#point{
+
+    display: none;
+}
+
+ul#gnbBox >li {
+    display: none;
+}
+
+ul#contentsBox li#news{
+    display: none;
+}
+ul#contentsBox li#notice{
+    display: none;
+}
+
+
+
+
+/*지훈상 -메인 -콘텐츠
+
+
+div#contentsWrap > ul#contentsBox >li#jihun img{
+
+    width: 100%;
+    height: 115px;
+    
+    
+}
+*/
+
+/*상품*/
+div#productionBox{
+    width: 320px;
+    height: 200px;
+
+    margin: 0 auto;
+    
+}
+
+/*텝메뉴*/
+
+div#productionBox >ul#tab{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+   
+    
+
+}
+
+div#productionBox >ul#tab >li{
+    width: 98px;
+    height: 35px;
+    margin: 2px;
+    
+
+}
+
+div#productionBox >ul#tab >li a{
+    font-size: 0.5px;
+    line-height: initial;
+    
+    padding: 0px 15px;
+    /*box-sizing: border-box;*/
+   
+
+}
+
+/*상품 리스트*/
+
+div#productionList{
+    width: 320px;
+
+    position: relative;
+    margin: 5px auto;
+    
+  
+}
+
+div#productionList > div#innerProductionList {
+   
+    width: 320px;
+    height: 154px;
+    overflow: hidden;
+    margin: 0 auto;
+   
+}
+
+
+div#productionList > div#innerProductionList >ul.overFlow li{
+    float: initial;
+    margin-left: 5px;
+}
+
+div#productionList > div#innerProductionList >ul.overFlow li a img{
+    
+    width: 25%;
+    height: 30%;
+    float: left;
+  
+}
+
+
+div#productionList > div#innerProductionList >ul.overFlow li a div{
+    display: none;
+}
+
+div#productionList > div#innerProductionList >ul.overFlow li a div span{
+    
+    display: none;
+   
+}
+
+/*푸터*/
+
+div#footerWrap > div#footerBox{
+    margin: 0 auto;
+    width: 320px;
+    overflow: hidden;
+    padding: 30px 0 50px 0;
+}
+
+div#footerWrap > div#footerBox >div#copy{
+   width: 320px;
+
+   display: inline-block;
+   margin-left: 20px;
+}
+
+
+div#footerWrap > div#footerBox>div#copy >ul#footerList >li:nth-child(1){
+   display: none;
+}
+
+
+div#footerWrap > div#footerBox>div#copy >ul#footerList >li:nth-child(2){
+    display: none;
+}
+
+div#footerWrap > div#footerBox>div#copy >ul#footerList >li {
+    float: left;
+    margin-left: 9px;
+}
+
+
+ div#footerWrap > div#footerBox>div#copy >ul#footerList >li >a{
+
+    font-size: 12px;
+}
+
+address{
+    font-size: 5px;
+
+}
+
+
+
+/*책 페이지*/
+
+
+div#newBooksBox{
+
+    width: 320px;
+    height: inherit;
+}
+
+div.booksWrap > div.booksBox > div.booksArea {
+    width: 320px;
+    height: auto;
+}
+
+table.bookTable>tbody>tr>td:nth-child(1) {
+    border-bottom: 1px solid silver;
+ }
+
+ table.bookTable>tbody>tr>td:nth-child(2) {
+   display: none;
+}
+
+table.bookTable>tbody>tr>td > a> div#modify {
+    float: left;
+    width: 130px;
+    height: 210px;
+    padding: 0 0 0 28px;
+}
+
+table.bookTable>tbody>tr>td > a> img {
+    width: 50%;
+    height: 80%;
+    float: left;
+}
+
+/*책 서브 */
+
+div.booksWrap {
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+
+div.booksWrap > div.booksBox > div#booksInfor {
+    width: 320px;
+    height: 1100px;
+}
+
+div.booksWrap > div.booksBox {
+    width: 320px;
+    height: initial;
+    margin: 0 auto;
+}
+
+div#tableWrap {
+    width: 320px;
+    height: 500px;
+    /* float: right; */
+    box-sizing: border-box;
+    /* padding-left: 40px; */
+}
+
+table#inforBookTable>tbody>tr>td:nth-child(1) {
+    width: 42%;
+    /* height: 100px; */
+    /* border-bottom: 1px solid #ddd; */
+    /* border-top: 1px solid #ddd; */
+    padding: 15px 15px 12px 20px;
+    /* background-color: #f9f9f9; */
+    height: 30px;
+}
+
+table#inforBookTable>tbody>tr>td:nth-child(2) {
+    display: block;
+    /* height: 100px; */
+    /* border-bottom: 1px solid #ddd; */
+    /* border-top: 1px solid #ddd; */
+    padding: 15px 15px 12px 20px;
+    /* background-color: #f9f9f9; */
+    height: 30px;
+}
+
+
+div.detailBox > ul >li.borderColor {
+    display: none;
+}
+
+div#bookDetailWrap{
+    width: 320px;
+    height: 1174px;
+}
+
+div.detailBox{
+    width: 180px;
+    margin: 0 auto;
+}
+
+div.detailBox:nth-child(2) {
+    margin-top: initial;
+}
+
+
+div.detailBox > ul {
+    overflow: hidden;
+    margin: 13px auto;
+    width: 150px;
+}
+
+div.detailBox > ul >li.informationBook {
+    width: 148px;
+}
+
+div.bookSummery > p{
+    font-size: 10px;
+    width: 216px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+/*인사말(introduce)*/
+div.introWrap {
+    
+    height: fit-content;
+    
+}
+
+div.introWrap> div.introBox {
+    width: 320px;
+    height: fit-content;
+    margin: 0 auto;
+
+}
+
+div#sayText {
+    margin-top: initial;
+}
+
+div.greetingTxt{
+    font-size: 5px;
+
+
+}
+
+h4.subTitle {
+   font-size: 6px;
+}
+
+/*게시판*/
+div#tableWrap {
+    width: 320px;
+    height: initial;
+    float: initial; 
+    box-sizing: border-box;
+    
+}
+
+
+
+
+div#noticeTableWrap{
+    width: 320px;
+    height: 1000px;
+
+}
+
+div#noticTableBox {
+    width: 320px;
+    height: 1000px;
+    /* background-color: wheat; */
+}
+
+div#pagerWrap {
+     width: initial; 
+
+    position: relative;
+   
+}
+
+div#pagerWrap > ul {
+    width: 40%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+table#noticeTable th.mediaQ{
+
+    display: none;
+}
+
+table#noticeTable tbody tr td.mediaQ{
+
+    display: none;
+}
+
+
+/*게시판 확인창*/
+
+/*table#noticeTable*/
+
+table#noticeTable img{
+
+    width: 310px;
+
+}
+
+table#preNextTable td.preNextText{
+    width: 50px;
+}
+
+table#preNextTable a.showNotice{
+
+    font-size: 10px;
+}
+
+/*게시판 글쓰기창*/
+div#noticeInputWrap> div#noticeInputBox {
+    width: 320px;
+    height: initial;
+    
+}
+
+
+/*약관동의 회원가입*/
+
+
+
+
+div#myFormWrap{
+
+    width: 320px;
+    height: 700px;
+    margin: 20px auto;
+}
+div#myFormWrap >h2{
+
+    font-size: 10px;
+}
+
+div#agreeJoinWrap {
+    width: 100%;
+    height: 1010px;
+    /* background-color: red; */
+}
+
+div#agreeJoinWrap> div#agreeJoinBox {
+    width: initial; 
+    height: 300px;
+}
+
+div#goAgreeJoinWrap {
+     width: initial; 
+  
+  
+}
+
+form#myForm ul#allWrap {
+    width: initial; 
+    
+}
+
+/*아이디찾기/ 비밀번호 찾기/ 로그인*/
+
+div#allWrap{
+    width: 320px;
+    height: initial;
+}
+
+
+div#allWrap >div#allFindLoginWrap {
+    width: 300px;
+    height: initial;
+}
+
+div#allWrap >div#goFindWrap {
+    width: 100%;
+    height: initial;
+   /* margin: 0 auto;
+    background-color: rebeccapurple;*/
+}
+
+div#allWrap >div#goFindWrap>ul >li >a {
+    padding: 11px;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+div#allWrap >div#goFindWrap>ul >li {
+    float: left;
+    width: 84px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: wheat;
+}
+
+form#allFindLoginForm input#overlapBtn {
+    width: 97px;
+    height: 30px;
+    position: absolute;
+    right: 6px;
+    top: 135px;
+    border: unset;
+}
+
+form#allFindLoginForm input.putPositionFind {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 2px 127px 2px 9px;
+    border: 1px solid black;
+    display: block;
+}
+
+form#allFindLoginForm input#searchBtn {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    border: unset;
+}
+
+/*장바구니*/
+
+div#buyBooksWrap{
+
+    width: 100%;
+    height: 1325px;
+    margin-top: 30px;
+    
+
+
+
+}
+
+div#buyBooksWrap > div#buyBooksBox{
+
+    width: 320px;
+    height: 422px;
+    margin: 0 auto;
+}
+
+
+/*장바구니 세부영역*/
+
+
+
+div#cartWrap> ul#infoBoard>li div{
+   
+    display: none;
+}
+
+div#cartWrap{
+
+    width: 320px;
+    height: fit-content;
+    
+    margin: 0 auto;  
+    position: unset;  
+}
+
+div#cart{
+
+    width: 320px;
+    height: 235px;
+    
+    position: unset;
+    right: 0; bottom: 125px;
+}
+
+
+div#cart> table#cartTable{
+    width: 320px;
+    height: 100%;
+}
+
+
+div#cart > table#cartTable tr td{
+  
+    font-size: 3px;
+    padding: unset;
+
+}
+div#buyBtnWrap {
+    width: 320px;
+    height: 85px;
+    
+    margin: 0 auto;
+}
+
+div#buyBtnWrap > input.buyBtn {
+    width: 110px;
+    height: 50px;
+    
+}
+
+/*주문*/
+
+div.buyFormWrap {
+    width: 320px;
+    
+}
+
+
+
+
+div.buyFormWrap form input{
+
+    width: 216px;
+    height: 34px;
+}
+
+div#oderBtnWrap {
+    width: 320px;
+    height: 85px;
+    margin: 10px auto;
+}
+div#oderBtnWrap > input.oderBtn {
+    width: 116px;
+}
+
+
+/*결제하기*/
+div#payFormWrap {
+    width: 320px;
+    height: unset;
+}
+
+div#payFormWrap form input {
+    width: 143px;
+    height: 34px;
+}
+
+
+
+
+
+}/*end of mediaQuery*/
+

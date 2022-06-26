@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/*스테디셀러 페이지*/
+/*포인트 충전*/
+table, th, td {
+
+    border: 1px solid black;
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+}
+
+
+input[type*="text"]{
+    width: 97%;
+    height: 100%;
+}
+
+
+input[type*="button"]{
+    width: 80%;
+    height: 80%;
+    margin-left: 28px;
+    
+
+}

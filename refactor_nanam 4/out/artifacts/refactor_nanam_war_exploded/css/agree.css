@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+
+/*전체*/
+/*agree*/
+
+ div#agreeJoinWrap{
+
+    width: 100%;
+    height: 800px;
+    /*background-color: red;*/
+
+}
+
+div#agreeJoinWrap> div#agreeJoinBox{
+
+    width: 1180px;
+    height: 800px;
+    /*background-color: black;*/
+    margin: 0 auto;
+
+}
+
+/*베이스바*/
+div#agreeJoinWrap> div#agreeJoinBox>div.basebar{
+
+    width: 100%;
+    height: 40px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+
+
+}
+
+div#agreeJoinWrap> div#agreeJoinBox>div.basebar>ul{
+    overflow: hidden;
+}
+
+div#agreeJoinWrap> div#agreeJoinBox>div.basebar>ul>li{
+    float: left;
+    margin-right: 8px;
+}
+
+/*약관동의/회원가입*/
+
+/*선택창*/
+
+div#goAgreeJoinWrap{
+    width: 438px;
+    height: 100px;
+    margin: 0 auto;
+    /*background-color: rebeccapurple;*/
+    
+}
+
+div#goAgreeJoinWrap>ul{
+    overflow: hidden;
+    
+}
+
+div#goAgreeJoinWrap>ul >li{
+    
+    width: 115px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+div#goAgreeJoinWrap>ul >li:nth-child(1){
+    float: left;
+    background-color:#21cab4;
+    
+}
+
+div#goAgreeJoinWrap>ul >li:nth-child(2){
+    float: right;
+    background-color: gainsboro;
+    
+}
+
+div#goAgreeJoinWrap>ul >li >a{
+    padding: 17px 22px 17px 21px;
+ 
+}
+
+
+div#myFormWrap{
+
+    width: 450px;
+    height: 700px;
+    margin: 80px auto;
+}
+
+
+div#myFormWrap >h2{
+
+    margin: 20px;
+}
+
+form#myForm ul#conditionsWrap{
+    width: 100%;
+   height: auto;
+   margin: 0 auto;
+
+}
+/*약관동의서 */
+form#myForm ul#conditionsWrap > li.itemBox{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+
+
+.label_space{
+
+    height: 40px;
+    margin-top: 10px;
+
+}
+
+
+/*창*/
+ul#conditionsWrap div.spec{
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid gray;
+    background: #00c5aa;;
+    margin-top: 8px;
+    color: white;
+    overflow: auto;
+    font-size: 1em;
+    line-height: 1.6;
+    
+}
+
+/*체크박스 모양 바꾸기*/
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label { 
+    display: inline-block;
+    padding-left: 20px; 
+    background: url("../images/arr/check01_off.png")  no-repeat; 
+}
+
+
+input[type="checkbox"]:checked + label {
+    background: url("../images/arr/check01_on.png") no-repeat;
+}

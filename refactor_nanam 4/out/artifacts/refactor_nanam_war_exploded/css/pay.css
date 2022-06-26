@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+ul#infoBoard{
+
+float: right;
+overflow: hidden;
+
+
+
+}
+
+ul#infoBoard>li{
+    float: left;
+}
+
+
+ ul#infoBoard>li div{
+   
+    width: 171px;
+    height: 92px;
+    background-color: white;
+ 
+    border-radius: 30%;
+    text-align: center;
+  
+    line-height: 92px;
+    margin-left:20px;
+}
+
+
+
+/*------------------결제-----------*/
+
+div#payFormWrap{
+   
+    width: 1180px;
+    height: 325px;
+    margin:0 auto;
+ 
+
+
+}
+
+
+div#payFormWrap table.orderTable{
+   
+    width: 100%;
+    height: 100%;
+
+
+}
+
+div#payFormWrap form table tr td:nth-child(1){
+
+    background-color: gainsboro;
+    width: 165px;
+    height: 50px;
+    font-size: 18px;
+    color: #666;
+   
+}
+
+div#payFormWrap form table tr td:nth-child(2){
+
+   
+    width: 165px;
+    height: 50px;
+    font-size: 18px;
+    color: #666;
+    background-color: wheat;
+   
+}
+div#payFormWrap form input{
+
+    width: 480px;
+    height: 34px;
+}
+
+div#payBtnWrap{
+    width: 500px;
+    height: 85px;
+    /*background-color: rebeccapurple;*/
+    margin: 0 auto;
+}
+
+
+div#orderBtnWrap{
+	width:fit-content;
+	
+	
+	margin: 0 auto;
+	
+	
+}
+
+input#payBtn{
+    width: 205px;
+    height: 50px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+    background-color: #00c5aa;
+    border: unset;
+
+}
+
+ input#notPayBtn{
+    width: 205px;
+    height: 50px;
+    margin-left: 30px;
+    float: left;
+    margin-top: 20px;
+    background-color: gainsboro;
+    border: unset;
+
+}
+
